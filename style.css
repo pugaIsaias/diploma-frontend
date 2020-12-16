@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+}
+
+.parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  background-color: #5470e1;
+  height: 10vh;
+}
+.footer {
+  background-color: #0782fa;
+  height: 10vh;
+}
+.main {
+  background-color: #f289fe;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  margin: 3px;
+  color: white;
+  font-weight: bold;
+}
+
+.diploma {
+  border-radius: 20px;
+  background: #fafafa;
+  color: black;
+  padding: 02em;
+  margin: 02em;
+  flex: 1;
+}
