@@ -1,38 +1,51 @@
 body {
   margin: 0px;
+  display: flex;
+  min-height: 100vh;
 }
 
 .parent {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  flex: 1;
+  flex-direction: column;
 }
 
 .header {
   background-color: #5470e1;
-  height: 10vh;
 }
 .footer {
   background-color: #0782fa;
-  height: 10vh;
 }
 .main {
   background-color: #f289fe;
-  min-height: 80vh;
   display: flex;
   justify-content: center;
 }
 
 .section {
-  margin: 3px;
   color: white;
-  font-weight: bold;
+  padding: 1em;
 }
 
 .diploma {
   border-radius: 20px;
   background: #fafafa;
   color: black;
-  padding: 02em;
-  margin: 02em;
+  padding: 05em;
+  margin: 01em 4em;
   flex: 1;
 }
+
+.responsive-col-to-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .responsive-col-to-row {
+    flex-direction: column;
+  }
+
+  .diploma {
+    margin: 0.5em;
+  }
+} ;
