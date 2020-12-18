@@ -1,9 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Cedarville+Cursive");
+
 body {
   margin: 0px;
   display: flex;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+
+/*=============
+    LAYOUT
+=============*/
+
+.parent {
+  flex: 1;
+  flex-direction: column;
+}
+
+.footer,
+.header {
+  background-color: #1e1c1c;
+  color: white;
+}
+.main {
+  background-color: #c4cacd;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  padding: 1em;
+}
+
+.diploma {
+  border-radius: 20px;
+  background: #fafafa;
+  padding: 0 05em;
+  margin: 01em 4em;
+  box-shadow: 0em 0em 0.125em;
+  flex: 1;
+  color: #4d4b4b;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  text-align: right;
+}
+
+img {
+  height: 5em;
+  margin: 2.5em 0;
+}
+
+.accomplishment-title {
+  margin: 2.5em 0;
+}
+
+.signatory {
+  margin-bottom: 1em;
+}
+
+.verification {
+  margin-top: 1em;
+  margin-left: 3em;
+}
+
+.responsive-col-to-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accomplishment-title {
+  color: #5470e1;
+}
+
+#official-segment {
+  justify-content: flex-start;
 }
 
 /*=============
@@ -23,70 +99,55 @@ h1 {
   font-size: 1em;
 }
 
-/*=============
-    LAYOUT
-=============*/
-
-.parent {
-  flex: 1;
-  flex-direction: column;
+.signatory-sign {
+  font-family: "Cedarville Cursive", cursive;
 }
 
-.header {
-  background-color: #5470e1;
-}
-.footer {
-  background-color: #0782fa;
-}
-.main {
-  background-color: #c4cacd;
-  display: flex;
-  justify-content: center;
+.signatory-name {
+  font-weight: bold;
+  color: #454545;
 }
 
-.section {
-  color: white;
-  padding: 1em;
+.organization {
+  font-style: italic;
 }
 
-.diploma {
-  border-radius: 20px;
-  background: #fafafa;
+#certification-name {
+  font-size: 1.2em;
+}
+
+#student-name {
+  font-size: 1.8em;
+}
+
+b {
   color: black;
-  padding: 05em;
-  margin: 01em 4em;
-  box-shadow: 0em 0em 0.125em;
-  flex: 1;
 }
 
-ul {
-  list-style: none;
-  padding: 0px;
+label {
+  font-weight: bold;
 }
 
-li {
-  border: 2px dotted green;
-  text-align: right;
+.signatory p {
+  margin: 0.4em;
 }
 
-img {
-  height: 5em;
-  margin: 2.5em 0;
+.role {
+  font-size: 0.9em;
 }
 
-.accomplishment-title {
-  margin: 2.5em 0;
+.organization {
+  font-size: 0.9em;
 }
 
-.verification {
-  margin-top: 1em;
+.verification p {
+  margin: 0.25em;
+  font-size: 0.8em;
 }
 
-.responsive-col-to-row {
-  display: flex;
-  justify-content: space-between;
-  border: 2px double blue;
-}
+/*=============
+  RESPONSIVE
+=============*/
 
 @media (max-width: 800px) {
   .responsive-col-to-row {
@@ -95,18 +156,28 @@ img {
     text-align: center;
   }
 
+  #student-name {
+    font-size: 1.4em;
+  }
+
   .res-division {
-    border-bottom: 2px solid gray;
+    border-bottom: 0.05em solid gray;
+    padding-bottom: 1em;
     margin-bottom: 1em;
     align-self: stretch;
   }
 
   .diploma {
     margin: 0.015em;
-    padding: 02em;
+    padding: 1.5em;
   }
 
   .signatory {
     text-align: center;
+  }
+
+  .verification {
+    margin: 0em;
+    margin-top: 1em;
   }
 } ;
