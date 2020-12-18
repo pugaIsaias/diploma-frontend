@@ -1,8 +1,31 @@
 body {
   margin: 0px;
   display: flex;
-  min-height: 100vh;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
 }
+
+/*=============
+  TYPOGRAPHY
+=============*/
+h1 {
+  font-size: 3.25em;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 0.16em;
+  display: block;
+  margin: 0px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 1em;
+}
+
+/*=============
+    LAYOUT
+=============*/
 
 .parent {
   flex: 1;
@@ -16,7 +39,7 @@ body {
   background-color: #0782fa;
 }
 .main {
-  background-color: #f289fe;
+  background-color: #c4cacd;
   display: flex;
   justify-content: center;
 }
@@ -32,18 +55,44 @@ body {
   color: black;
   padding: 05em;
   margin: 01em 4em;
+  box-shadow: 0em 0em 0.125em;
   flex: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  border: 2px dotted green;
+  text-align: right;
+}
+
+img {
+  height: 5em;
+  margin: 2.5em 0;
+}
+
+.accomplishment-title {
+  margin: 2.5em 0;
+}
+
+.verification {
+  margin-top: 1em;
 }
 
 .responsive-col-to-row {
   display: flex;
   justify-content: space-between;
+  border: 2px double blue;
 }
 
 @media (max-width: 800px) {
   .responsive-col-to-row {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .res-division {
@@ -53,6 +102,11 @@ body {
   }
 
   .diploma {
-    margin: 0.5em;
+    margin: 0.015em;
+    padding: 02em;
+  }
+
+  .signatory {
+    text-align: center;
   }
 } ;
