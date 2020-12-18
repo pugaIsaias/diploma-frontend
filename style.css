@@ -80,6 +80,7 @@ img {
 
 #official-segment {
   justify-content: flex-start;
+  margin-bottom: 1em;
 }
 
 /*=============
@@ -149,7 +150,11 @@ label {
   RESPONSIVE
 =============*/
 
-@media (max-width: 800px) {
+@media (max-width: 768px), (orientation: portrait) {
+  body {
+    font-size: 1.5rem;
+  }
+
   .responsive-col-to-row {
     flex-direction: column;
     align-items: center;
