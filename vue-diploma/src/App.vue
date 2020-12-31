@@ -1,28 +1,56 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="parent">
+    <header class="header section">Header</header>
+    <main class="main section">
+      <diploma> </diploma>
+    </main>
+    <footer class="footer section">Footer Content</footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import diploma from "./components/Diploma";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    diploma,
+  },
+};
 </script>
 
 <style>
+body {
+  margin: 0em;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.parent {
+  flex: 1;
+  flex-direction: column;
+}
+
+.footer,
+.header {
+  background-color: #1e1c1c;
+  color: white;
+}
+.main {
+  background-color: #c4cacd;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  padding: 1em;
 }
 </style>
