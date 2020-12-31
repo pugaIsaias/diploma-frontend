@@ -31,4 +31,11 @@ export default {
   flex: 1;
   color: #4d4b4b;
 }
+
+@media (max-width: 768px), (orientation: portrait) {
+  .diploma {
+    margin: 0.015em;
+    padding: 1.5em;
+  }
+}
 </style>
