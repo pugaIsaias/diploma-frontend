@@ -87,17 +87,17 @@ img {
   TYPOGRAPHY
 =============*/
 h1 {
-  font-size: 3.25em;
+  font-size: 3.25rem;
   text-align: center;
   font-weight: lighter;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.16rem;
   display: block;
   margin: 0px;
 }
 
 .subtitle {
   display: block;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .signatory-sign {
@@ -114,11 +114,11 @@ h1 {
 }
 
 #certification-name {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 #student-name {
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 b {
@@ -130,20 +130,20 @@ label {
 }
 
 .signatory p {
-  margin: 0.4em;
+  margin: 0.4rem;
 }
 
 .role {
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .organization {
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .verification p {
-  margin: 0.25em;
-  font-size: 0.8em;
+  margin: 0.25rem;
+  font-size: 0.8rem;
 }
 
 /*=============
@@ -162,7 +162,7 @@ label {
   }
 
   #student-name {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   .res-division {
