@@ -1,32 +1,27 @@
 <template>
   <section class="diploma">
-    <Title />
-    <img alt="hyrule crest" src="../assets/crest.png" />
-
-    <img
-      alt="organization logo: hyrule"
-      src="../assets/organization-logo.png"
-    />
+    <DiplomaTop />
+    <DiplomaMiddle />
+    <DiplomaBottom />
   </section>
 </template>
 
 <script>
-import Title from "./Title.vue";
+import DiplomaTop from "./Diploma-top";
+import DiplomaMiddle from "./Diploma-middle";
+import DiplomaBottom from "./Diploma-bottom";
 
 export default {
   name: "diploma",
   components: {
-    Title,
+    DiplomaTop,
+    DiplomaMiddle,
+    DiplomaBottom,
   },
 };
 </script>
 
 <style scoped>
-img {
-  height: 5em;
-  margin: 2.5em 0;
-}
-
 .diploma {
   border-radius: 20px;
   background: #fafafa;
