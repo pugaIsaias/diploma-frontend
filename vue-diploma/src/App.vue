@@ -53,4 +53,10 @@ body {
 .section {
   padding: 1em;
 }
+
+@media (max-width: 768px), (orientation: portrait) {
+  body {
+    font-size: 1.5rem;
+  }
+}
 </style>
